@@ -40,6 +40,10 @@ Then, you can open the **config_MosaicViewer.sh** file with a text editor and se
 ## Usage
 As a first step, open the **config_MosaicViewer.sh** file with a text editor and set all the variables. Depending on the reference coordinates set in the file, in-silico PCR primers and flanking regions for performing left or right alignment are extracted.
 
+<p align="center">
+  <img src="Figures/FMR1_left_right_alignment.png" alt="drawing" width="800" title="FMR1_left_right_alignment">
+</p>
+
 **MosaicViewer.sh**
 
 Usage: ./MosaicViewer.sh
