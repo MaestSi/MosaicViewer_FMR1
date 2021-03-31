@@ -23,7 +23,7 @@ chmod 755 Miniconda3-latest-Linux-x86_64.sh
 
 * A fastq file containing reads from one sample. Tested with files produced with Guppy v4.2.
 * A fasta file containing reference sequence (e.g. hg38)
-* Coordinates of flanking regions (e.g. used regions flanking the repeat)
+* Coordinates of flanking regions (e.g. regions flanking the repeat)
 
 **Installation**
 
