@@ -54,7 +54,7 @@ Outputs:
 
 ## Results visualization
 
-For example, this is how the left alignment of trimmed reads (with or without colouring based on annotated repeats) would look like.
+For example, this is how the right alignment of trimmed reads (with or without colouring based on annotated repeats) would look like.
 
 <p align="center">
   <img src="Figures/MosaicViewer_output_example.png" alt="drawing" width="800" title="MosaicViewer_output_example">
