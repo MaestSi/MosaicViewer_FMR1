@@ -96,5 +96,5 @@ $SIMPLIFY_READS "./"$SAMPLE_NAME"_trimmed_"$SIDE"_fw.ncrf.summary" "./"$SAMPLE_N
 $SEQTK subseq $SAMPLE_NAME"_trimmed_"$SIDE"_fw_simplified.fasta" $SAMPLE_NAME"_"$SIDE"_reads_trimmed_ok_IDs.txt" -l 100000 > $SAMPLE_NAME"_trimmed_"$SIDE"_fw_simplified_ok.fasta"
 $SEQTK subseq $SAMPLE_NAME"_trimmed_"$SIDE"_fw_simplified.fasta" $SAMPLE_NAME"_"$SIDE"_reads_trimmed_to_rc_IDs.txt" -l 100000 | $SEQTK seq -A -r -  > $SAMPLE_NAME"_trimmed_"$SIDE"_rv_simplified_ok.fasta"
 cat $SAMPLE_NAME"_trimmed_"$SIDE"_fw_simplified_ok.fasta" $SAMPLE_NAME"_trimmed_"$SIDE"_rv_simplified_ok.fasta" > $SAMPLE_NAME"_trimmed_simplified_"$SIDE"_final.fasta"
-$MINIMAP2 -ax map-ont --MD  $REF_FILENAME $SAMPLE_NAME"_trimmed_simplified_"$SIDE"_final.fasta" | $SAMTOOLS sort -o $SAMPLE_NAME"_trimmed_simplified_"$SIDE"_final.bam"
+$MINIMAP2 -ax map-ont -k5 --MD  $REF_FILENAME $SAMPLE_NAME"_trimmed_simplified_"$SIDE"_final.fasta" | $SAMTOOLS sort -o $SAMPLE_NAME"_trimmed_simplified_"$SIDE"_final.bam"
 $SAMTOOLS index $SAMPLE_NAME"_trimmed_simplified_"$SIDE"_final.bam"
