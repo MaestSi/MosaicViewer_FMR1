@@ -75,7 +75,7 @@ $CUTPRIMERS in=$SAMPLE_NAME"_trimmed_wflank.fastq" out=$SAMPLE_NAME"_trimmed.fas
 $SEQTK seq -A $SAMPLE_NAME"_trimmed.fastq" | grep "^>" | sed 's/>//' | cut -d ' ' -f1 | sort > $SAMPLE_NAME"_reads_IDs.txt"
 
 #map to reference
-$MINIMAP2 -ax map-ont --MD $REF_FILENAME $SAMPLE_NAME"_trimmed.fastq" | $SAMTOOLS view -h -F2308 | $SAMTOOLS sort -o $SAMPLE_NAME"_trimmed_"$SIDE".bam" -T reads.tmp
+$MINIMAP2 -ax map-ont -k5 --MD $REF_FILENAME $SAMPLE_NAME"_trimmed.fastq" | $SAMTOOLS view -h -F2308 | $SAMTOOLS sort -o $SAMPLE_NAME"_trimmed_"$SIDE".bam" -T reads.tmp
 $SAMTOOLS index $SAMPLE_NAME"_trimmed_"$SIDE".bam"
 
 #extract fasta from bam in forward orientation
