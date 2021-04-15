@@ -80,6 +80,6 @@ Li H, Handsaker B, Wysoker A, Fennell T, Ruan J, Homer N, Marth G, Abecasis G, D
 
 Thorvaldsdóttir H, Robinson JT, Mesirov JP. Integrative Genomics Viewer (IGV): high-performance genomics data visualization and exploration. Brief Bioinform. 2013 Mar;14(2):178-92. doi: 10.1093/bib/bbs017. Epub 2012 Apr 19. PMID: 22517427; PMCID: PMC3603213.
 
-BBMap – Bushnell B. – sourceforge.net/projects/bbmap/
+[BBMap – Bushnell B.](sourceforge.net/projects/bbmap/)
 
-https://github.com/lh3/seqtk
+[seqtk](https://github.com/lh3/seqtk)
