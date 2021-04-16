@@ -1,6 +1,6 @@
 # MosaicViewer_FMR1
 
-**MosaicViewer_FMR1** is a pipeline for schematic visualization of alleles with somatic mosaicism. Due to mosaicism, long sequencing reads can not be collapsed into an accurate consensus sequence. Therefore, only repeat annotation of each single read can be performed. MosaicViewer_FMR1 integrates tool for performing repeat annotation of noisy long reads, performs alignment to left and right flanking regions, and generates "simplified" reads, for easier identification of alternative motifs in IGV visualization. The pipeline has only been used for FMR1 alleles, but its applicability can be extended with minor modification.
+**MosaicViewer_FMR1** is a pipeline for schematic visualization of alleles with somatic mosaicism. Due to mosaicism, long sequencing reads can not be collapsed into an accurate consensus sequence. Therefore, only repeat annotation of each single read can be performed. MosaicViewer_FMR1 integrates tools for extracting "complete" reads, namely with both repeat flanking regions, performing repeat annotation of noisy long reads, performing alignment to left and right flanking regions, and generating "simplified" reads, for easier identification of alternative motifs in IGV visualization. The pipeline has only been used for FMR1 alleles.
 
 <p align="center">
   <img src="Figures/MosaicViewer.png" alt="drawing" width="400" title="MosaicViewer_pipeline">
