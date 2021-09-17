@@ -66,6 +66,10 @@ For example, this is how the right alignment of trimmed reads (with or without c
 
 ## Citation
 
+If this tool is useful for your work, please consider citing our manuscript.
+
+Grosso V, Marcolungo L, Maestri S, Alfano M, Lavezzari D, Iadarola B, Salviati A, Mariottin B, Botta A, D'Apice MR, Novelli G, Delledonne M and Rossato M. Characterization of FMR1 repeat-expansion and intragenic variants by indirect sequence capture. Front. Genet. doi: 10.3389/fgene.2021.743230.
+
 For further information, please refer to the following manuscripts:
 
 Harris RS, Cechova M, Makova KD. Noise-cancelling repeat finder: uncovering tandem repeats in error-prone long-read sequencing data. Bioinformatics. 2019 Nov 1;35(22):4809-4811. doi: 10.1093/bioinformatics/btz484. PMID: 31290946; PMCID: PMC6853708.
