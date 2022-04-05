@@ -25,9 +25,11 @@ conda config --add channels anaconda
 conda config --add channels conda-forge
 conda config --add channels bioconda
 
-conda create -n MosaicViewer_env seqtk minimap2 samtools r bioconductor-biostrings ncrf bbmap python=2.7
-conda create -n NanoFilt_env NanoFilt
+conda create -n MosaicViewer_env seqtk minimap2 samtools=1.15 ncrf bbmap python=2.7
+conda create -n NanoFilt_env NanoFilt bioconductor-biostrings 
 ln -s $MINICONDA_DIR"/envs/NanoFilt_env/bin/NanoFilt" $MINICONDA_DIR"/envs/MosaicViewer_env/bin"
+ln -s $MINICONDA_DIR"/envs/NanoFilt_env/bin/R" $MINICONDA_DIR"/envs/MosaicViewer_env/bin"
+ln -s $MINICONDA_DIR"/envs/NanoFilt_env/bin/Rscript" $MINICONDA_DIR"/envs/MosaicViewer_env/bin"
 
 cd $PIPELINE_DIR
 
