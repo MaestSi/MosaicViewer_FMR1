@@ -25,11 +25,16 @@ conda config --add channels anaconda
 conda config --add channels conda-forge
 conda config --add channels bioconda
 
-conda create -n MosaicViewer_env seqtk minimap2 samtools=1.15 ncrf bbmap python=2.7
-conda create -n NanoFilt_env NanoFilt bioconductor-biostrings 
-ln -s $MINICONDA_DIR"/envs/NanoFilt_env/bin/NanoFilt" $MINICONDA_DIR"/envs/MosaicViewer_env/bin"
-ln -s $MINICONDA_DIR"/envs/NanoFilt_env/bin/R" $MINICONDA_DIR"/envs/MosaicViewer_env/bin"
-ln -s $MINICONDA_DIR"/envs/NanoFilt_env/bin/Rscript" $MINICONDA_DIR"/envs/MosaicViewer_env/bin"
+conda create -n MosaicViewer_env ncrf python=2.7
+conda create -n MosaicViewer_supp_env NanoFilt seqtk minimap2 samtools r bioconductor-biostrings bbmap
+ln -s $MINICONDA_DIR"/envs/MosaicViewer_supp_env/bin/NanoFilt" $MINICONDA_DIR"/envs/MosaicViewer_env/bin"
+ln -s $MINICONDA_DIR"/envs/MosaicViewer_supp_env/bin/seqtk" $MINICONDA_DIR"/envs/MosaicViewer_env/bin"
+ln -s $MINICONDA_DIR"/envs/MosaicViewer_supp_env/bin/minimap2" $MINICONDA_DIR"/envs/MosaicViewer_env/bin"
+ln -s $MINICONDA_DIR"/envs/MosaicViewer_supp_env/bin/samtools" $MINICONDA_DIR"/envs/MosaicViewer_env/bin"
+ln -s $MINICONDA_DIR"/envs/MosaicViewer_supp_env/bin/Rscript" $MINICONDA_DIR"/envs/MosaicViewer_env/bin"
+ln -s $MINICONDA_DIR"/envs/MosaicViewer_supp_env/bin/msa.sh" $MINICONDA_DIR"/envs/MosaicViewer_env/bin"
+ln -s $MINICONDA_DIR"/envs/MosaicViewer_supp_env/bin/cutprimers.sh" $MINICONDA_DIR"/envs/MosaicViewer_env/bin"
+ln -s $MINICONDA_DIR"/envs/MosaicViewer_supp_env/bin/java" $MINICONDA_DIR"/envs/MosaicViewer_env/bin"
 
 cd $PIPELINE_DIR
 
